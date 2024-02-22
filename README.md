@@ -5,16 +5,16 @@ Công ty tài chính muốn xây dựng hệ thống quản lý dữ liệu giao
 
 Giả định rằng giao dịch được phát sinh mỗi khi người dùng dùng credit card quẹt trên các máy POS tại các cửa hàng mua sắm, nhà hàng,…. Mỗi giao dịch này được gửi qua hệ thống theo thời gian thực. 
 
-1. Sử dụng Kafka để mô phỏng từng giao dịch được phát sinh với các thông tin được cho trước dạng csv.
+- Sử dụng Kafka để mô phỏng từng giao dịch được phát sinh với các thông tin được cho trước dạng csv.
 Kafka sẽ đọc từng dòng csv và gửi qua topic được định nghĩa trước để giả lập một giao dịch được
 phát sinh từ máy POS.
 
-2. Sử dụng Spark Streaming để đọc dữ liệu từ Kafka theo thời gian thực, các xử lý bao gồm lọc dữ liệu, biến đổi thông tin, tính toán dữ liệu.
+- Sử dụng Spark Streaming để đọc dữ liệu từ Kafka theo thời gian thực, các xử lý bao gồm lọc dữ liệu, biến đổi thông tin, tính toán dữ liệu.
 
-3. Sử dụng Hadoop để lưu trữ các thông tin được xử lý từ Spark và là nơi lưu trữ thông tin
+- Sử dụng Hadoop để lưu trữ các thông tin được xử lý từ Spark và là nơi lưu trữ thông tin
 được xử lý để có thể trực quan hóa dữ liệu và thống kê.
 
-4. Sử dụng Power BI để đọc dữ liệu từ Hadoop (dạng csv), thống kê dữ liệu và hiển thị dữ liệu một cách trực quan. 
+- Sử dụng Power BI để đọc dữ liệu từ Hadoop (dạng csv), thống kê dữ liệu và hiển thị dữ liệu một cách trực quan. 
 
 ## Getting started
 
